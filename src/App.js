@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import Image from './components/image'
-import Information from './components/information'
-import Yes from './components/yes'
-import No from './components/no'
+import Image from './components/Image'
+import Information from './components/Information'
+import Yes from './components/Yes'
+import No from './components/No'
+import Navbar from './components/Navbar'
 
 
 class App extends Component {

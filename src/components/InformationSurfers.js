@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class InformationHosts extends Component {
+class InformationSurfers extends Component {
     state = {}
     render() {
         return (
             <div>
                 {
-                     this.props.users.map(user => {
+                     this.props.surfers.map(user => {
                          return(
                             <ul>
                                 <li key={user.id}>ID: {user.id}</li>
@@ -26,5 +26,5 @@ class InformationHosts extends Component {
     
 }
 
-export default InformationHosts;
+export default InformationSurfers;
    

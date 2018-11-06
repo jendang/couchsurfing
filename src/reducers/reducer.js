@@ -63,12 +63,12 @@ const initialState= [
 
 const reducer = (state = initialState, action = {}) => {
     switch (action.type) {
-      case 'GET_HOST':
+      case 'GET_HOSTS':
           return [
             ...state,
             action.payload
           ]
-      
+     
       
     default:
       return state

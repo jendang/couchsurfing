@@ -33,11 +33,14 @@ class InformationHostsContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
+  if(state.reducer !== null){
+    return {
+      users: state.filter(user => )
+       
+    }
 
-  return {
-    users: state.filter(user => !user.status)
-     
   }
+  return {}
 }
 
 export default connect(mapStateToProps)(InformationHostsContainer);

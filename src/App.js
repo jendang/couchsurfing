@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Image from './components/Image'
-
 import Yes from './components/Yes'
 import No from './components/No'
 import Navbar from './components/Navbar'

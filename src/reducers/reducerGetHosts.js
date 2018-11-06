@@ -18,7 +18,7 @@ const initialState= [
     gender: "female",
     password: "ggpush",
     email: "sabinadhaugoda@gmail.com",
-    isSurfer: true //surfer
+    isSurfer: true, //surfer
     matchedId: []
     },
     {
@@ -29,7 +29,7 @@ const initialState= [
     gender: "female",
     password: "1234567890",
     email: "jenny.dang117@gmail.com",
-    isSurfer: true //surfer
+    isSurfer: true, //surfer
     matchedId: []
     },
     {
@@ -40,7 +40,7 @@ const initialState= [
     gender: "male",
     password: "1234567890",
     email: "Roel.Mast90@gmail.com",
-    isSurfer: true //surfer
+    isSurfer: true, //surfer
     matchedId: []
     },
     {
@@ -51,7 +51,7 @@ const initialState= [
     gender: "female",
     password: "1234567890",
     email: "mimi@gmail.com",
-    isSurfer: false //host
+    isSurfer: false, //host
     matchedId: []
     },
     {
@@ -62,12 +62,12 @@ const initialState= [
     gender: "male",
     password: "1234567890",
     email: "arien@gmail.com",
-    isSurfer: false //host
+    isSurfer: false, //host
     matchedId: []
     }
 ]
 
-const reducer = (state = initialState, action = {}) => {
+const getHosts = (state = initialState, action = {}) => {
     switch (action.type) {
       case 'GET_HOSTS':
           return [
@@ -81,4 +81,4 @@ const reducer = (state = initialState, action = {}) => {
     }
   }
   
-export default reducer
+export default getHosts

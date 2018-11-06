@@ -77,7 +77,7 @@ const initialState= [
 let currentUser = initialState[0]
 let currentMatch = initialState[1]
 
-const submitYes = (currentUser, currentMatch) => {
+const insertMatchId = (currentUser, currentMatch) => {
     return currentUser.matchedId.push(currentMatch.id)
 }
 
@@ -88,13 +88,19 @@ const submitYes = (currentUser, currentMatch) => {
 
 function createMessage () {
     if ((currentUser.matchedId = [currentMatch.id]) && (currentMatch.matchedId = [currentUser.id])) {
-            return currentUser.messages.push("You have matched with " + currentMatch.username);
+            return (currentUser.messages.push("You have matched with " + currentMatch.username)) && 
+            (currentMatch.messages.push("You have matched with " + currentUser.username));
         }
     }
+
+
+
+
+
 createMessage();
 
-console.log(initialState[0])
 console.log(currentUser)
+console.log(currentMatch)
 
     
 

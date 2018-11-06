@@ -1,4 +1,4 @@
-import {GET_HOSTS} from '../actions/actionGetHosts'
+//import {GET_HOSTS} from '../actions/actionGetHosts'
 
 const initialState= [
     {
@@ -69,13 +69,15 @@ const initialState= [
     }
 ]
 
-const reducer = (state = initialState, action = {}) => {
+const users = (state = initialState, action = {}) => {
     switch (action.type) {
-      case GET_HOSTS:
-          return [
-            ...state,
-            action.payload
-          ]
+      // case GET_HOSTS:
+      //     return [
+      //       ...state,
+      //       action.payload
+      //     ]
+       
+      
      
       
     default:
@@ -83,4 +85,4 @@ const reducer = (state = initialState, action = {}) => {
     }
   }
   
-export default reducer
+export default users

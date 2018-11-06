@@ -1,31 +1,24 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import InformationHosts from './InformationHosts'
+import { getHosts } from '../actions/actionGetHosts';
 
 class InformationHostsContainer extends Component {
   renderHost = (user) => {
-    
-      this.props.dispatch({
-        type: 'GET_HOSTS',
-        payload: {
-          id: user.id,
-          username: user.username,
-          lastname: user.lastname,
-          age: user.age,
-          gender: user.gender
-        }
-      })
+      
+        return this.props.dispatch(getHosts(user))
 
   }
 
 
   render() {
-    // const hosts = this.props.hosts
+   
     const users = this.props.users
     if(!users) return null
     return (
       <div className="App">
-        <InformationHosts users={users}/>
+        {/* <button onClick={this.renderHost}>Render HOST</button> */}
+        <InformationHosts hosts={users} />
         
       </div>
     );
@@ -33,14 +26,15 @@ class InformationHostsContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
-  if(state.reducer !== null){
-    return {
-      users: state.filter(user => )
-       
-    }
+    // hosts = state.getHosts.filter(host => host.status)
+      return {
+        users: state.users.filter(user => !user.isSurfer)
+      }
+      
+      
+  
 
-  }
-  return {}
+
 }
 
 export default connect(mapStateToProps)(InformationHostsContainer);

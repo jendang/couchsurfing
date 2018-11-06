@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 class InformationHosts extends Component {
-    state = {}
+    
     render() {
         return (
             <div>
                 {
-                     this.props.users.map(user => {
+                     this.props.hosts.map(user => {
                          return(
                             <ul>
                                 <li key={user.id}>ID: {user.id}</li>

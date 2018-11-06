@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-//import InformationHosts from './InformationHosts'
-import { getHosts } from '../actions/actionGetHosts';
+
+
 
 class InformationHostsContainer extends Component {
+  state = {
+    displayHost: false
+  }
+
   renderHost = () => {
+    if(this.state.displayHost)
       return (
         <div>
                 {
-                     this.props.users.map(user => {
+                     this.props.hosts.map(user => {
                          return(
                             <ul  key={user.id}>
                                 <li>ID: {user.id}</li>
@@ -24,8 +29,14 @@ class InformationHostsContainer extends Component {
                 }
             </div>
       )
+    else
+        return null
         
 
+  }
+
+  btnHandle = () => {
+    this.setState({displayHost: !this.state.displayHost})
   }
 
 
@@ -33,8 +44,8 @@ class InformationHostsContainer extends Component {
    
     return (
       <div className="App">
-        <button onClick={this.renderHost}>Render HOST</button>
-        {/* <InformationHosts hosts={users} /> */}
+        <button onClick={this.btnHandle}>Render HOST</button>
+        {this.renderHost()}
         
       </div>
     );
@@ -42,15 +53,10 @@ class InformationHostsContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
-    // hosts = state.getHosts.filter(host => host.status)
-      return {
-        users: state.users.filter(user => user.isSurfer)
-      }
-      
-      
-  
-
-
+  return {
+    hosts: state.users.filter(user => !user.isSurfer)
+  }
+ 
 }
 
 export default connect(mapStateToProps)(InformationHostsContainer);

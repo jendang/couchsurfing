@@ -1,34 +1,51 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import InformationSurfers from './InformationHosts'
+
 
 class InformationSurfersContainer extends Component {
-  renderHost = (user) => {
-    
-      this.props.dispatch({
-        type: 'GET_SURFERS',
-        payload: {
-          id: user.id,
-          username: user.username,
-          lastname: user.lastname,
-          age: user.age,
-          gender: user.gender
-        }
-      })
+  
+  state = {
+    displaySurfer: false
+  }
 
-    
+  renderSurfer = () => {
+    if(this.state.displaySurfer)
+      return (
+        <div>
+                {
+                     this.props.surfers.map(user => {
+                         return(
+                            <ul  key={user.id}>
+                                <li>ID: {user.id}</li>
+                                <li>Username: {user.username}</li>
+                                <li> Lastname: {user.lastname}</li>
+                                <li>Age: {user.age}</li>
+                                <li>Gender: {user.gender}</li>
+                            </ul>
+
+                         )
+                     })
+
+                }
+            </div>
+      )
+    else
+        return null
+        
 
   }
-  
+
+  btnHandle = () => {
+    this.setState({displaySurfer: !this.state.displaySurfer})
+  }
+
 
   render() {
-    const surfers = this.props.surfers
-    if(!surfers) return null
+   
     return (
       <div className="App">
-        {/* <button onClick={this.renderHost}>Surfer</button> */}
-        {/* <button onClick={this.renderSurfer}>Host</button> */}
-        <InformationSurfers surfers={surfers}/>
+        <button onClick={this.btnHandle}>Render SURFERS</button>
+        {this.renderSurfer()}
         
       </div>
     );
@@ -37,8 +54,12 @@ class InformationSurfersContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    surfers: state.filter(surfer => surfer.status)
+    surfers: state.users.filter(user => user.isSurfer)
   }
+ 
 }
+
+
+
 
 export default connect(mapStateToProps)(InformationSurfersContainer);

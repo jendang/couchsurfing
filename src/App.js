@@ -5,6 +5,7 @@ import Yes from './components/Yes'
 import No from './components/No'
 import Navbar from './components/Navbar'
 import InformationHostsContainer from './components/InformationHostsContainer';
+import InformationSurfersContainer from './components/InformationSurfersContainer';
 
 
 class App extends Component {
@@ -21,6 +22,8 @@ class App extends Component {
           <Image />
           <No />
           <InformationHostsContainer /> 
+          <InformationSurfersContainer />
+          
         </main>
       </div>
     );

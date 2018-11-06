@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
-import getHosts from './reducerGetHosts'
+import users from './users'
 // import reducer2 from './reducers'
+import reducerGetHost from './reducerGetHost'
 
 export default combineReducers({
-  getHosts
+  users,
+  reducerGetHost
 
 })

@@ -7,7 +7,8 @@ const initialState= [
     gender: "male",
     password: "supercomplexpassword",
     email: "kylepgracia@gmail.com",
-    status: true
+    isSurfer: true,
+    matchedId: []
     },
     {
     id: 2,
@@ -17,7 +18,8 @@ const initialState= [
     gender: "female",
     password: "ggpush",
     email: "sabinadhaugoda@gmail.com",
-    status: true //surfer
+    isSurfer: true //surfer
+    matchedId: []
     },
     {
     id: 3,
@@ -27,7 +29,8 @@ const initialState= [
     gender: "female",
     password: "1234567890",
     email: "jenny.dang117@gmail.com",
-    status: true //surfer
+    isSurfer: true //surfer
+    matchedId: []
     },
     {
     id: 4,
@@ -37,7 +40,8 @@ const initialState= [
     gender: "male",
     password: "1234567890",
     email: "Roel.Mast90@gmail.com",
-    status: true //surfer
+    isSurfer: true //surfer
+    matchedId: []
     },
     {
     id: 5,
@@ -47,7 +51,8 @@ const initialState= [
     gender: "female",
     password: "1234567890",
     email: "mimi@gmail.com",
-    status: false //host
+    isSurfer: false //host
+    matchedId: []
     },
     {
     id: 6,
@@ -57,7 +62,8 @@ const initialState= [
     gender: "male",
     password: "1234567890",
     email: "arien@gmail.com",
-    status: false //host
+    isSurfer: false //host
+    matchedId: []
     }
 ]
 

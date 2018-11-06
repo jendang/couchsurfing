@@ -21,6 +21,7 @@ class App extends Component {
           <Image />
           <No />
           <InformationHostsContainer /> 
+          
         </main>
       </div>
     );

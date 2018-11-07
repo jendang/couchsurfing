@@ -8,6 +8,8 @@ import InformationHostsContainer from './components/InformationHostsContainer';
 import InformationSurfersContainer from './components/InformationSurfersContainer';
 import LogInContainer from './components/LogInContainer';
 import Match from './components/pushMatch';
+import { BrowserRouter } from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
 
 
@@ -18,7 +20,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+        <BrowserRouter>
+
+        <div className="App">
         <header className="App-header">
           <h1>Couchaisseur</h1>
         </header>
@@ -26,17 +30,21 @@ class App extends Component {
         <main>
           
           <Navbar />
+          {/* <Navbar /> 
           <Yes />
           <Image />
-          <No />
-          <InformationHostsContainer /> 
-          <InformationSurfersContainer />
-          <LogInContainer />
-          <Match />
+          <No /> */}
+
+          <Route exact path="/" component={LogInContainer} />
+          <Route exact path="/surfers/" component={InformationSurfersContainer} />
+          <Route exact path="/hosts/" component={InformationHostsContainer} />
+          <Route exact path="/match/" component={Match} />
+
           
           
         </main>
       </div>
+      </BrowserRouter>
     );
   }
 

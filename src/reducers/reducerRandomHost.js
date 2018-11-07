@@ -48,7 +48,7 @@ const hosts= [
 ]
 
 const initialState = hosts[Math.floor(Math.random()* Math.floor(hosts.length))]
-console.log(initialState)
+
 
  export default (state = initialState, action = {}) => {
      

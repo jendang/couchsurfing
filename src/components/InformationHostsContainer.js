@@ -5,7 +5,8 @@ import {connect} from 'react-redux';
 
 class InformationHostsContainer extends Component {
   state = {
-    displayHost: false
+    displayHost: false,
+    code: true
   }
 
   renderHost = () => {
@@ -13,9 +14,11 @@ class InformationHostsContainer extends Component {
     if(this.state.displayHost) {
       return (
         <div>
+          
           <p>Name: {randomHosts.username}</p>
           <p>Age: {randomHosts.age}</p>
           <p>Gender: {randomHosts.gender}</p>
+
          
         </div>
         
@@ -30,6 +33,9 @@ class InformationHostsContainer extends Component {
     this.setState({displayHost: !this.state.displayHost})
   }
 
+  clickHandle = () => {
+
+  }
 
   render() {
    
@@ -37,6 +43,7 @@ class InformationHostsContainer extends Component {
       <div className="App">
         <button onClick={this.btnHandle}>Render HOST</button>
         {this.renderHost()}
+        
         
         
       </div>

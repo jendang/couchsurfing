@@ -8,26 +8,22 @@ class LogInContainer extends Component {
   state = {}
 
 
-
 handleSubmit = () => {
-    this.props.users.filter(
-      curUser => {
-        if ((curUser.username === this.state.username) && (curUser.password === this.state.password)) {
-          return alert("User Found !!!");
-        } else {
-          return alert("User not Found");
-        }
-      }
-    )
-  }
+  const userFound =  this.props.users.filter(
+      curUser => curUser.username === this.state.username && curUser.password === this.state.password)
+      
+    
+   // console.log(userFound)
+if (userFound.length < 1 ){
+   return alert("User not Found !!!")
+}else {        
+  return alert("User Found")}
+}
 
 handleChange = (e) => {
         this.setState({ [e.target.name]: e.target.value })
 }
-      
  
-
-
 render() {
   return (
     <div>

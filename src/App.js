@@ -35,8 +35,8 @@ class App extends Component {
           <No /> */}
 
           <Route exact path="/" component={LogInContainer} />
-          <Route exact path="/surfers/" component={InformationSurfersContainer} />
-          <Route exact path="/hosts/" component={InformationHostsContainer} />
+          <Route exact path="/users/" component={InformationSurfersContainer} />
+          <Route exact path="/users/" component={InformationHostsContainer} />
           <Route exact path="/match/" component={Match} />
 
           

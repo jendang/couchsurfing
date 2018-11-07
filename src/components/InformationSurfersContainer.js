@@ -37,8 +37,6 @@ class InformationSurfersContainer extends Component {
       <div className="App">
         <button onClick={this.btnHandle}>Render SURFERS</button>
         {this.renderSurfer()}
-        <button onClick={this.renderSurfer}>YES</button>
-        <button onClick={this.renderSurfer}>NO</button>
         
       </div>
     );

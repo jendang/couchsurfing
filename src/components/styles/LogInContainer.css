@@ -1,0 +1,22 @@
+form {
+    background-color: white;
+    color: #0E365E;
+}
+
+input {
+    width: 20%;
+}
+
+label:before {
+    content: "\a";
+    white-space: pre;
+}
+
+label:after {
+    content: "\a";
+    white-space: pre;
+}
+
+h2 {
+    font-family: semibold;
+}

@@ -9,29 +9,20 @@ class InformationHostsContainer extends Component {
   }
 
   renderHost = () => {
-    if(this.state.displayHost)
+    const {randomHosts} = this.props
+    if(this.state.displayHost) {
       return (
         <div>
-                {
-                     this.props.hosts.map(user => {
-                         return(
-                            <ul  key={user.id}>
-                                <li>ID: {user.id}</li>
-                                <li>Username: {user.username}</li>
-                                <li> Lastname: {user.lastname}</li>
-                                <li>Age: {user.age}</li>
-                                <li>Gender: {user.gender}</li>
-                            </ul>
+          <p>Name: {randomHosts.username}</p>
+          <p>Age: {randomHosts.age}</p>
+          <p>Gender: {randomHosts.gender}</p>
 
-                         )
-                     })
-
-                }
-            </div>
-      )
-    else
-        return null
+        </div>
         
+      )
+
+    }else
+      return null
 
   }
 
@@ -46,6 +37,8 @@ class InformationHostsContainer extends Component {
       <div className="App">
         <button onClick={this.btnHandle}>Render HOST</button>
         {this.renderHost()}
+        <button onClick={this.renderHost}>YES</button>
+        <button onClick={this.renderHost}>NO</button>
         
       </div>
     );
@@ -54,7 +47,8 @@ class InformationHostsContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    hosts: state.users.filter(user => !user.isSurfer)
+    // hosts: state.users.filter(user => !user.isSurfer)
+    randomHosts: state.reducerRandomHost
   }
  
 }

@@ -8,7 +8,12 @@ import InformationHostsContainer from './components/InformationHostsContainer';
 import InformationSurfersContainer from './components/InformationSurfersContainer';
 
 
+
+
+
+
 class App extends Component {
+
   render() {
     return (
       <div className="App">
@@ -24,10 +29,12 @@ class App extends Component {
           <InformationHostsContainer /> 
           <InformationSurfersContainer />
           
+          
         </main>
       </div>
     );
   }
+
 }
 
 export default App;

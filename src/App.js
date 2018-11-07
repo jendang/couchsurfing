@@ -24,7 +24,7 @@ class App extends Component {
 
         <div className="App">
         <header className="App-header">
-          <h1>Couchaisseur</h1>
+          <Navbar />
         </header>
 
         <main>

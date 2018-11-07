@@ -43,7 +43,7 @@ render() {
           Password:
           <input type="text" name="password" value={this.state.password} onChange={this.handleChange} />
         </label>
-          <Link to= {'/hosts'}><input type="submit" value="Submit"></input></Link>
+          <Link to= {'/users'}><input type="submit" value="Submit"></input></Link>
       </form>
     </div>
     )

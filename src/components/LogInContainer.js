@@ -11,9 +11,11 @@ class LogInContainer extends Component {
 
 handleSubmit = () => {
         
-        for (let i = 0; i < this.props.users.length; i++){
-            if ((this.props.users[i].username === this.state.username) && (this.props.users[i].password === this.state.password)) {
-          
+    for (let i = 0; i < this.props.users.length; i++){
+        if ((this.props.users[i].username === this.state.username) && (this.props.users[i].password === this.state.password)) {
+          alert("User Found !!!")
+        } else {
+          alert("User not Found")
         }
     }
 }

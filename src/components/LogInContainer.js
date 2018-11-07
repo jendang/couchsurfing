@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import {Link} from 'react-router-dom'
+
 
 
 
@@ -41,8 +43,7 @@ render() {
           Password:
           <input type="text" name="password" value={this.state.password} onChange={this.handleChange} />
         </label>
-
-        <input type="submit" value="Submit" />
+          <Link to= {'/hosts'}><input type="submit" value="Submit"></input></Link>
       </form>
     </div>
     )

@@ -15,23 +15,35 @@ class InformationSurfersContainer extends Component {
                 {
                      this.props.surfers.map(user => {
                          return(
-                            <ul  key={user.id}>
-                                <li>ID: {user.id}</li>
-                                <li>Username: {user.username}</li>
-                                <li> Lastname: {user.lastname}</li>
-                                <li>Age: {user.age}</li>
-                                <li>Gender: {user.gender}</li>
-                            </ul>
+                           <div>
+                            <div className="info">
+                              <ul  key={user.id}>
+                                  <li>ID: {user.id}</li>
+                                  <li>Username: {user.username}</li>
+                                  <li> Lastname: {user.lastname}</li>
+                                  <li>Age: {user.age}</li>
+                                  <li>Gender: {user.gender}</li>
+                              </ul>
+                            </div>
+                            <div className='yesNoBtn'>
+                              <button>NO</button>
+                              <button>YES</button>
+                            </div>
+
+                          </div>
+
 
                          )
                      })
 
                 }
+                
+                
             </div>
       )
     else
         return null
-        
+      
 
   }
 

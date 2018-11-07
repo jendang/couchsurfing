@@ -1,5 +1,7 @@
 form {
     color: #0E365E;
+    padding-top: 20px;
+
 }
 
 input {
@@ -15,10 +17,18 @@ h2 {
     font-family: semibold;
 }
 
+#submitbox {
+    background-color: #170C9E;
+
+}
+
+.textbox {
+    background-color: #b67aff;
+}
+
 #body {
     background-image: linear-gradient(#170C9E, #E626EA);
     height: 100vh;
-    
 }
 
 img {
@@ -29,4 +39,5 @@ img {
 h1 {
     font-family: Raleway;
     font-size: 60px;
+    text-shadow: 2px 2px #170C9E;
 }

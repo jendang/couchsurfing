@@ -23,9 +23,15 @@ class App extends Component {
         <BrowserRouter>
 
         <div className="App">
+<<<<<<< HEAD
         <header className="App-header">
           <Navbar /> 
         </header>
+=======
+        
+        <Navbar />
+        
+>>>>>>> bef170e04261af35b836c0cb179e0330a1ed8fb9
 
         <main>
           

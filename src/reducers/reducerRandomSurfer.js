@@ -52,7 +52,7 @@ const surfers = [
 
 
 const initialState = surfers[Math.floor(Math.random()* Math.floor(surfers.length))]
-console.log(initialState)
+
 
  export default (state = initialState, action = {}) => {
      

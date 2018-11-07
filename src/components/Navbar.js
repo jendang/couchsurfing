@@ -5,22 +5,18 @@ import './styles/navbar.css';
 class Navbar extends Component {
   render() {
     return (
-      <div id="Nav">
-      
+      <div className="Nav">
       <ul>
 
-        <li><a href="https://www.home.com">Home</a></li>
+       <li><img alt="home" src="images/home.svg"></img></li>
 
-        <li><a href="https://www.preferences.com">Preferences</a></li>
+       <li><img alt="messages" src="images/envelope.svg"></img></li>
 
-        <li><a href="https://www.messages.com">Messages</a></li>
+       <li><img alt="preferences" src="images/preference.svg"></img></li>
 
-        <li><a href="https://www.surfer.com">Surfer</a></li>
-
-        <li><a href="https://www.host.com">Host</a></li>
+       <li><img alt="logout" src="images/logout.svg"></img></li>
       
-      </ul>
-
+       </ul>
       </div>
 
     );

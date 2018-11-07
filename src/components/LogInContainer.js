@@ -35,19 +35,20 @@ render() {
         
         <label>
           Username:
-          <input type="text" name="username" value={this.state.username} onChange={this.handleChange} />
+          <input className="textbox" type="text" name="username" value={this.state.username} onChange={this.handleChange} />
         </label>
 
         <label>
           Password:
-          <input type="text" name="password" value={this.state.password} onChange={this.handleChange} />
+          <input className="textbox" type="text" name="password" value={this.state.password} onChange={this.handleChange} />
         </label>
-          <Link to= {'/users'}><input type="submit" value="Sign In"></input></Link>
+          <Link id="submitbox" to= {'/users'}><input type="submit" value="Sign In"></input></Link>
       </form>
 
-      <img src="images/download.jpg"></img>
+      <img alt="logo" src="images/download.jpg"></img>
+      
 
-      <h1>Welcome to Couchassieur</h1>
+      <h1>Welcome to Couchaisseur</h1>
     </div>
     )
   }

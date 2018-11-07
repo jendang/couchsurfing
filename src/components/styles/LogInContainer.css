@@ -1,22 +1,32 @@
 form {
-    background-color: white;
     color: #0E365E;
 }
 
 input {
-    width: 20%;
+    width: 10%;
 }
 
-label:before {
-    content: "\a";
-    white-space: pre;
-}
-
-label:after {
-    content: "\a";
-    white-space: pre;
+label {
+    color: white;
+    padding-right: 20px;
 }
 
 h2 {
     font-family: semibold;
+}
+
+#body {
+    background-image: linear-gradient(#170C9E, #E626EA);
+    height: 100vh;
+    
+}
+
+img {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: Raleway;
+    font-size: 60px;
 }

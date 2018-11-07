@@ -29,8 +29,7 @@ handleChange = (e) => {
  
 render() {
   return (
-    <div>
-      <h2>Log In</h2>
+    <div id="body">
 
       <form onSubmit={this.handleSubmit}>
         
@@ -43,8 +42,12 @@ render() {
           Password:
           <input type="text" name="password" value={this.state.password} onChange={this.handleChange} />
         </label>
-          <Link to= {'/users'}><input type="submit" value="Submit"></input></Link>
+          <Link to= {'/users'}><input type="submit" value="Sign In"></input></Link>
       </form>
+
+      <img src="images/download.jpg"></img>
+
+      <h1>Welcome to Couchassieur</h1>
     </div>
     )
   }

@@ -29,7 +29,6 @@ class App extends Component {
 
         <main>
           
-          <Navbar />
           {/* <Navbar /> 
           <Yes />
           <Image />

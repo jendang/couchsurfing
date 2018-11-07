@@ -19,6 +19,7 @@ class App extends Component {
         </header>
 
         <main>
+          
           <Navbar />
           <Yes />
           <Image />

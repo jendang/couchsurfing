@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-
+import './styles/SurferButton.css'
+import {Link} from 'react-router-dom';
 
 class InformationSurfersContainer extends Component {
   
@@ -34,10 +35,10 @@ class InformationSurfersContainer extends Component {
   render() {
    
     return (
-      <div className="App">
-        <button onClick={this.btnHandle}>Render SURFERS</button>
+      <div className="renderSurfer">
+        <Link to= {'/surfers'}><button className = "SurferButton" onClick={this.btnHandle}>Surfers
+        </button></Link>
         {this.renderSurfer()}
-        
       </div>
     );
   }

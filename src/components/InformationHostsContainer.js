@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import './styles/HostButton.css'
+import {Link} from 'react-router-dom';
+
+
 
 
 
@@ -40,12 +44,9 @@ class InformationHostsContainer extends Component {
   render() {
    
     return (
-      <div className="App">
-        <button onClick={this.btnHandle}>Render HOST</button>
+      <div className="renderHost">
+        <Link to= {'/hosts'}><button className = "HostButton" onClick={this.btnHandle}>Hosts</button></Link>
         {this.renderHost()}
-        
-        
-        
       </div>
     );
   }

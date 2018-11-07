@@ -1,0 +1,41 @@
+.HostButton {
+    background-color:white; 
+    color: #0E365E;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 12px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 0px 3px 0px grey, 0px 3px 15px rgba(0,0,0,.4);
+    justify-content: center;
+    font-family: Raleway;
+    cursor: pointer;
+    font-weight: bold;
+
+
+    
+
+}
+
+.renderHost{
+    color: #0E365E;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: oblique;
+    font-weight: bold
+
+}
+
+/* .extraText{
+    color: #0E365E;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: oblique;
+    font-weight: bold;
+}
+ */
+
+

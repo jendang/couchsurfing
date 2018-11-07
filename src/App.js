@@ -6,6 +6,8 @@ import No from './components/No'
 import Navbar from './components/Navbar'
 import InformationHostsContainer from './components/InformationHostsContainer';
 import InformationSurfersContainer from './components/InformationSurfersContainer';
+import LogInContainer from './components/LogInContainer';
+import Match from './components/pushMatch';
 
 
 
@@ -18,16 +20,19 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Couchassier</h1>
+          <h1>Couchaisseur</h1>
         </header>
 
         <main>
+          
           <Navbar />
           <Yes />
           <Image />
           <No />
           <InformationHostsContainer /> 
           <InformationSurfersContainer />
+          <LogInContainer />
+          <Match />
           
           
         </main>

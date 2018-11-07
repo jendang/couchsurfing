@@ -16,7 +16,7 @@ class InformationHostsContainer extends Component {
           <p>Name: {randomHosts.username}</p>
           <p>Age: {randomHosts.age}</p>
           <p>Gender: {randomHosts.gender}</p>
-
+         
         </div>
         
       )
@@ -37,8 +37,7 @@ class InformationHostsContainer extends Component {
       <div className="App">
         <button onClick={this.btnHandle}>Render HOST</button>
         {this.renderHost()}
-        <button onClick={this.renderHost}>YES</button>
-        <button onClick={this.renderHost}>NO</button>
+        
         
       </div>
     );

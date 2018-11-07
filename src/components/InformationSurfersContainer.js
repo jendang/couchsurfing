@@ -9,43 +9,22 @@ class InformationSurfersContainer extends Component {
   }
 
   renderSurfer = () => {
-    if(this.state.displaySurfer)
+    const {randomSurfers} = this.props
+    if(this.state.displaySurfer) {
       return (
         <div>
-                {
-                     this.props.surfers.map(user => {
-                         return(
-                           <div>
-                            <div className="info">
-                              <ul  key={user.id}>
-                                  <li>ID: {user.id}</li>
-                                  <li>Username: {user.username}</li>
-                                  <li> Lastname: {user.lastname}</li>
-                                  <li>Age: {user.age}</li>
-                                  <li>Gender: {user.gender}</li>
-                              </ul>
-                            </div>
-                            <div className='yesNoBtn'>
-                              <button>NO</button>
-                              <button>YES</button>
-                            </div>
+          <p>Name: {randomSurfers.username}</p>
+          <p>Age: {randomSurfers.age}</p>
+          <p>Gender: {randomSurfers.gender}</p>
 
-                          </div>
-
-
-                         )
-                     })
-
-                }
-                
-                
-            </div>
+        </div>
+        
       )
-    else
-        return null
-      
 
+    }else
+      return null
   }
+    
 
   btnHandle = () => {
     this.setState({displaySurfer: !this.state.displaySurfer})
@@ -58,6 +37,8 @@ class InformationSurfersContainer extends Component {
       <div className="App">
         <button onClick={this.btnHandle}>Render SURFERS</button>
         {this.renderSurfer()}
+        <button onClick={this.renderSurfer}>YES</button>
+        <button onClick={this.renderSurfer}>NO</button>
         
       </div>
     );
@@ -66,7 +47,7 @@ class InformationSurfersContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    surfers: state.users.filter(user => user.isSurfer)
+    randomSurfers: state.reducerRandomSurfer
   }
  
 }

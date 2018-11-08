@@ -1,4 +1,6 @@
-const hosts= [
+import {GET_HOSTS} from '../actions/actionGetHosts'
+
+const initialState= [
     
     {
     id: 5,
@@ -47,17 +49,17 @@ const hosts= [
     }
 ]
 
-const initialState = hosts[Math.floor(Math.random()* Math.floor(hosts.length))]
+//const initialState = hosts[Math.floor(Math.random()* Math.floor(hosts.length))]
 
 
- export default (state = initialState, action = {}) => {
-     
+export default (state = initialState, action = {}) => {
+    
     switch (action.type) {
-        
-
+        case GET_HOSTS:
+        const hosts = initialState[Math.floor(Math.random()* Math.floor(initialState.length))]
+            return hosts
         default:       
             return state
     }
   }
-  
   //export default randomHosts

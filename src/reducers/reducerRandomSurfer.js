@@ -1,4 +1,6 @@
-const surfers = [
+import {GET_SURFERS} from '../actions/actionGetSurfers'
+
+const initialState = [
     {
         id: 1,
         username: "Kyle",
@@ -50,16 +52,15 @@ const surfers = [
 ]
 
 
-
-const initialState = surfers[Math.floor(Math.random()* Math.floor(surfers.length))]
-
-
- export default (state = initialState, action = {}) => {
-     
+export default (state = initialState, action = {}) => {
+    
     switch (action.type) {
-        
-
+        case GET_SURFERS:
+        const surfers = initialState[Math.floor(Math.random()* Math.floor(initialState.length))]
+            return surfers
         default:       
             return state
     }
   }
+
+

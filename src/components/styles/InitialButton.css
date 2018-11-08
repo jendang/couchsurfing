@@ -51,9 +51,11 @@
 }
 
 .Header{
+    color: white;   
     margin: 50px;
     font-family: Raleway;
     font-size: 60px;
     text-shadow: 2px 2px #0E365E;
+    padding-bottom: 30px;
 
 }

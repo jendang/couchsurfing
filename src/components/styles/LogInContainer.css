@@ -37,11 +37,12 @@ button {
 }
 
 h1 {
-    font-family: Lato;
     font-size: 46px;
     text-shadow: 2px 2px #170C9E;
     font-style: Regular;
-    text-align: center
+    text-align: center;
+    padding-top: 5px;
+    margin-top: -15px;
 }
 
 #submitbox {
@@ -53,7 +54,6 @@ h1 {
     float: right;
     color: white;
     font-size: 18px;
-    font-family: Raleway;
     border-color: #E626EA
 
 }
@@ -68,5 +68,27 @@ h1 {
     color: white;
     text-align: center;
     font-size: 18px;
-    font-family: Raleway;
+}
+
+#signup{
+    background-color: #170C9E;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 7px 25px;
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+#texts{
+    font-style: regular;
+    font-size: 28px;
+    line-height: 34px;
+    align-content: center
+    
+
 }

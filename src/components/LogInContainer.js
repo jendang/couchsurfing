@@ -34,8 +34,9 @@ render() {
         
         <label>
           
-          <Link to= {'/users'}><input id="submitbox" type="submit" value="Sign In"></input></Link>
+          <Link to= {'/users'}><input id="submitbox" type="submit" value="sign in"></input></Link>
 
+         
           <input className="textbox1" placeholder = "Password" type="text" name="password" value={this.state.password} onChange={this.handleChange} />
         </label>
 
@@ -49,7 +50,11 @@ render() {
       
 
       <h1>Welcome to Couchaisseur </h1>
-      <span><h1>Amsterdam</h1></span>
+      <h1>Amsterdam</h1>
+      <div className ="signup">
+        <Link to= {'/signup'}><input id="signup" type="submit" value="sign up for free"></input></Link>
+      </div>
+      <p id="texts">Sign up today, get matched and stay with locals!</p>
     </div>
       
     )

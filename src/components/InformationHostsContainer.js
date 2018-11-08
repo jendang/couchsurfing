@@ -58,7 +58,8 @@ class InformationHostsContainer extends Component {
 const mapStateToProps = (state) => {
   return {
    
-    randomHosts: state.reducerRandomHost
+    randomHosts: state.reducerRandomHost,
+    randomSurfers: state.reducerRandomSurfer
 
   }
  

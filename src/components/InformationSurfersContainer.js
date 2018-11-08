@@ -16,10 +16,7 @@ class InformationSurfersContainer extends Component {
     // if(this.state.displaySurfer) {
       return (
         <div>
-           <Navbar />
           <img width="200px" height="200px" src={`./images/${randomSurfers.image}`} alt="profile"/>
-       
-
           <p>Name: {randomSurfers.username}</p>
           <p>Age: {randomSurfers.age}</p>
           <p>Gender: {randomSurfers.gender}</p>
@@ -41,8 +38,15 @@ class InformationSurfersContainer extends Component {
   render() {
 
     return (
-      <div className="renderSurfer">
-        {this.renderSurfer()}
+      <div>
+        <header>
+            <Navbar /> 
+
+        </header>
+        <div className="renderSurfer">
+          {this.renderSurfer()}
+        </div>
+
       </div>
     );
   }

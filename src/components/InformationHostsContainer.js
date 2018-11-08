@@ -3,11 +3,6 @@ import {connect} from 'react-redux';
 import './styles/HostButton.css'
 import Navbar from './Navbar'
 
-
-
-
-
-
 class InformationHostsContainer extends Component {
   state = {}
 

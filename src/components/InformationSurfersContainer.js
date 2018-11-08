@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './styles/SurferButton.css'
 import Navbar from './Navbar';
+import {getSurfers} from '../actions/actionGetSurfers'
 
 
 class InformationSurfersContainer extends Component {
   
-  // state = {
-  //   displaySurfer: false
-  // }
+  renderSurferBtn = () => {
+    
+    this.props.getSurfers()
+
+  }
 
   renderSurfer = () => {
     //const {randomSurfers} = this.props
@@ -16,10 +19,18 @@ class InformationSurfersContainer extends Component {
     // if(this.state.displaySurfer) {
       return (
         <div>
-          <img width="200px" height="200px" src={`./images/${randomSurfers.image}`} alt="profile"/>
+          {/* <img width="200px" height="200px" src={`./images/${randomSurfers.image}`} alt="profile"/> */}
+          <div className="flex-container">
+          <div><img className ="no" alt="check" src="images/no.svg" onClick={this.renderSurferBtn}></img></div>
+          <div><img className="profile" width="200px" height="200px" src={`./images/${randomSurfers.image}`} alt="profile"/></div>
+          <div><img className ="yes" alt="check" src="images/yes.svg" onClick={this.renderSurferBtn} /></div>
+          </div>
+
+          <div className="info">
           <p>Name: {randomSurfers.username}</p>
           <p>Age: {randomSurfers.age}</p>
           <p>Gender: {randomSurfers.gender}</p>
+          </div>
           
         </div>
         
@@ -38,6 +49,7 @@ class InformationSurfersContainer extends Component {
   render() {
 
     return (
+<<<<<<< HEAD
       <div>
         <header>
             <Navbar /> 
@@ -47,6 +59,13 @@ class InformationSurfersContainer extends Component {
           {this.renderSurfer()}
         </div>
 
+=======
+      <div className="renderSurfer">
+      <header>
+      <Navbar />
+      </header>
+        {this.renderSurfer()}
+>>>>>>> e32f39c0e9da367927d157de3c848becf64acd04
       </div>
     );
   }
@@ -62,4 +81,4 @@ const mapStateToProps = (state) => {
 
 
 
-export default connect(mapStateToProps)(InformationSurfersContainer);
+export default connect(mapStateToProps, {getSurfers} )(InformationSurfersContainer);

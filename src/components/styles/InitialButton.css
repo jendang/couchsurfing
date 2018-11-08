@@ -1,0 +1,46 @@
+.InitialButton{
+    background-color:white; 
+    color: #0E365E;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 12px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 0px 3px 0px grey, 0px 3px 15px rgba(0,0,0,.4);
+    align-items: center;
+    justify-content: center;
+    font-family: Raleway;
+    cursor: pointer;
+    
+}
+
+/* .InitialButton2{
+    background-color:white; 
+    color: #0E365E;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 12px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 0px 3px 0px grey, 0px 3px 15px rgba(0,0,0,.4);
+    align-items: center;
+    justify-content: center;
+    font-family: Raleway;
+    cursor: pointer;
+    
+} */
+.UpperText{
+    color: #0E365E;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 50px;
+
+}

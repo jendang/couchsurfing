@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './styles/HostButton.css'
-import {Link} from 'react-router-dom';
+
 
 
 
 
 
 class InformationHostsContainer extends Component {
-  state = {
-    displayHost: false,
-    code: true
-  }
+  state = {}
 
   renderHost = () => {
     const {randomHosts} = this.props
-    if(this.state.displayHost) {
+
       return (
         <div>
           
@@ -28,24 +25,16 @@ class InformationHostsContainer extends Component {
         
       )
 
-    }else
-      return null
+  
 
   }
 
-  btnHandle = () => {
-    this.setState({displayHost: !this.state.displayHost})
-  }
-
-  clickHandle = () => {
-
-  }
+ 
 
   render() {
    
     return (
       <div className="renderHost">
-        <Link to= {'/hosts'}><button className = "HostButton" onClick={this.btnHandle}>Hosts</button></Link>
         {this.renderHost()}
       </div>
     );
@@ -54,8 +43,9 @@ class InformationHostsContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    // hosts: state.users.filter(user => !user.isSurfer)
+   
     randomHosts: state.reducerRandomHost
+
   }
  
 }

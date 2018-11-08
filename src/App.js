@@ -9,7 +9,6 @@ import LogInContainer from './components/LogInContainer';
 import Match from './components/pushMatch';
 import { BrowserRouter } from 'react-router-dom'
 import {Route} from 'react-router-dom'
-import Users from './components/Users'
 
 
 

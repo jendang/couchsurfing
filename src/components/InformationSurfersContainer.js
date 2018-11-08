@@ -19,14 +19,17 @@ class InformationSurfersContainer extends Component {
     // if(this.state.displaySurfer) {
       return (
         <div>
-          <img className ="no" alt="check" src="images/no.svg" onClick={this.renderSurferBtn}></img>
-          <img width="200px" height="200px" src={`./images/${randomSurfers.image}`} alt="profile"/>
-          <img className ="yes" alt="check" src="images/yes.svg" onClick={this.renderSurferBtn} />
-       
+          <div className="flex-container">
+          <div><img className ="no" alt="check" src="images/no.svg" onClick={this.renderSurferBtn}></img></div>
+          <div><img className="profile" width="200px" height="200px" src={`./images/${randomSurfers.image}`} alt="profile"/></div>
+          <div><img className ="yes" alt="check" src="images/yes.svg" onClick={this.renderSurferBtn} /></div>
+          </div>
 
+          <div className="info">
           <p>Name: {randomSurfers.username}</p>
           <p>Age: {randomSurfers.age}</p>
           <p>Gender: {randomSurfers.gender}</p>
+          </div>
           
         </div>
         

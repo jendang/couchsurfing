@@ -17,7 +17,7 @@ class InformationSurfersContainer extends Component {
       return (
         <div>
            <Navbar />
-          <img width="200px" height="200px" src={`./images/${randomSurfers.image}`} alt="profile"/
+          <img width="200px" height="200px" src={`./images/${randomSurfers.image}`} alt="profile"/>
        
 
           <p>Name: {randomSurfers.username}</p>

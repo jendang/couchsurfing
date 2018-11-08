@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './styles/SurferButton.css'
-import {Link} from 'react-router-dom';
 
 class InformationSurfersContainer extends Component {
   
@@ -33,7 +32,6 @@ class InformationSurfersContainer extends Component {
 
 
   render() {
-   console.log(this.props)
     return (
       <div className="renderSurfer">
         {this.renderSurfer()}

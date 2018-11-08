@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './styles/SurferButton.css'
+import Navbar from './Navbar';
 
 
 class InformationSurfersContainer extends Component {
@@ -15,6 +16,7 @@ class InformationSurfersContainer extends Component {
     // if(this.state.displaySurfer) {
       return (
         <div>
+        <Navbar />
           <p>Name: {randomSurfers.username}</p>
           <p>Age: {randomSurfers.age}</p>
           <p>Gender: {randomSurfers.gender}</p>

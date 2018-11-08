@@ -3,6 +3,7 @@ import './styles/InitialButton.css'
 import InformationHostsContainer from './InformationHostsContainer';
 import {Link} from 'react-router-dom';
 import InformationSurfersContainer from './InformationSurfersContainer';
+import Navbar from './Navbar';
 
 
 class InitialButton extends Component {
@@ -19,6 +20,7 @@ class InitialButton extends Component {
     render() { 
         return (  
             <div>
+                <Navbar />
                 <p className = "Header"> Welcome _______ </p>
                 <p className = "UpperText"> What are you looking for, today? </p>
                 <Link to= {'/surfers'}><button className ="InitialButton1" onClick={this.renderSurferBtn}>A Surfer</button></Link>

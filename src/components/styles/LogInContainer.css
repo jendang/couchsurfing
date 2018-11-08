@@ -1,16 +1,14 @@
 form {
     color: #0E365E;
     padding-top: 20px;
+    align-items: right;
+    padding-left: 650px
 
-}
-
-input {
-    width: 10%;
 }
 
 label {
     color: white;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 h2 {
@@ -47,6 +45,21 @@ h2 {
 
     
 }
+button {
+    background-color: #b67aff;
+    height: 30px;
+    width: 150px;
+    margin-top: 30px;
+    margin-right: 30px;
+    float: right;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: Raleway;
+
+
+    
+}
 
 #body {
     background-image: linear-gradient(#170C9E, #E626EA);
@@ -54,8 +67,8 @@ h2 {
 }
 
 .HomeImage {
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-top: 110px;
+    padding-bottom: 40px;
 }
 
 h1 {
@@ -65,3 +78,5 @@ h1 {
     font-style: Regular;
     text-align: center
 }
+
+

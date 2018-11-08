@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './styles/SurferButton.css'
 
+
 class InformationSurfersContainer extends Component {
   
   // state = {
@@ -9,6 +10,7 @@ class InformationSurfersContainer extends Component {
   // }
 
   renderSurfer = () => {
+    //const {randomSurfers} = this.props
     const {randomSurfers} = this.props
     // if(this.state.displaySurfer) {
       return (
@@ -32,6 +34,7 @@ class InformationSurfersContainer extends Component {
 
 
   render() {
+
     return (
       <div className="renderSurfer">
         {this.renderSurfer()}

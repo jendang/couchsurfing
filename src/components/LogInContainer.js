@@ -26,6 +26,7 @@ handleChange = (e) => {
 }
  
 render() {
+  
   return (
     <div id="body">
 
@@ -44,12 +45,13 @@ render() {
         </label>
       </form>
 
-      <img className ="HomeImage" alt="logo" src="images/download.jpg"></img>
+      <img className ="HomeImage" alt="logo" width="500px" src="images/logodef.svg"></img>
       
 
       <h1>Welcome to Couchaisseur </h1>
       <span><h1>Amsterdam</h1></span>
     </div>
+      
     )
   }
 

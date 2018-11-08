@@ -26,6 +26,7 @@ class InitialButton extends Component {
                 <Link to= {'/hosts'}><button className ="InitialButton2" onClick={this.renderHostBtn}>A Host</button></Link>
                 
             </div>
+                
         );
     }
 }

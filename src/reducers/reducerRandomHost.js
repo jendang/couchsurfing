@@ -11,7 +11,9 @@ const initialState= [
     password: "1234567890",
     email: "mimi@gmail.com",
     isSurfer: false, //host
-    matchedId: []
+    matchedId: [1],
+    messages: ["You have been matched with this host"],
+    image: ['mimi.png']
     },
     {
     id: 6,
@@ -22,7 +24,8 @@ const initialState= [
     password: "1234567890",
     email: "mimi@gmail.com",
     isSurfer: false, //host
-    matchedId: []
+    matchedId: [],
+    image: ['lisa.png']
     },
 
     {
@@ -34,7 +37,8 @@ const initialState= [
     password: "1234567890",
     email: "arien@gmail.com",
     isSurfer: false, //host
-    matchedId: []
+    matchedId: [],
+    image: ['arien.png']
     },
     {
     id: 8,
@@ -45,7 +49,8 @@ const initialState= [
     password: "1234567890",
     email: "arien@gmail.com",
     isSurfer: false, //host
-    matchedId: []
+    matchedId: [],
+    image: ['milan.png']
     }
 ]
 

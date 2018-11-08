@@ -16,7 +16,7 @@ class InformationHostsContainer extends Component {
 
       return (
         <div>
-          
+          <img width="200px" height="200px" src={`./images/${randomHosts.image}`} alt="profile"/>
           <p>Name: {randomHosts.username}</p>
           <p>Age: {randomHosts.age}</p>
           <p>Gender: {randomHosts.gender}</p>

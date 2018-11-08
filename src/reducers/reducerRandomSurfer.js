@@ -10,9 +10,9 @@ const initialState = [
         password: "supercomplexpassword",
         email: "kylepgracia@gmail.com",
         isSurfer: true,
-        matchedId: [],
-        messages: [],
-        image: '/images/Kyle.jpg'
+        matchedId: [5],
+        messages: ["You have been matched with this host"],
+        image: ['kyle.jpg']
         },
         {
         id: 2,
@@ -24,7 +24,8 @@ const initialState = [
         email: "sabinadhaugoda@gmail.com",
         isSurfer: true, //surfer
         matchedId: [],
-        messages: []
+        messages: [],
+        image: ['sabina.jpg']
         },
         {
         id: 3,
@@ -36,7 +37,8 @@ const initialState = [
         email: "jenny.dang117@gmail.com",
         isSurfer: true, //surfer
         matchedId: [],
-        messages: []
+        messages: [],
+        image: ['jenny.jpg']
         },
         {
         id: 4,
@@ -48,7 +50,8 @@ const initialState = [
         email: "Roel.Mast90@gmail.com",
         isSurfer: true, //surfer
         matchedId: [],
-        messages: []
+        messages: [],
+        image: ['roel.png']
         }
 ]
 

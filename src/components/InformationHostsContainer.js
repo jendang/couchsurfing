@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './styles/HostButton.css'
 import Navbar from './Navbar'
+import {getHosts} from '../actions/actionGetHosts'
 
 
 
@@ -11,12 +12,22 @@ import Navbar from './Navbar'
 class InformationHostsContainer extends Component {
   state = {}
 
+
+  renderHostBtn = () => {
+    
+    this.props.getHosts()
+
+  }
+
   renderHost = () => {
     const {randomHosts} = this.props
+    // this.props.getHosts()
 
       return (
         <div>
+          <img className ="no" alt="check" src="images/no.svg" onClick={this.renderHostBtn}></img>
           <img width="200px" height="200px" src={`./images/${randomHosts.image}`} alt="profile"/>
+          <img className ="yes" alt="check" src="images/yes.svg" onClick={this.renderHostBtn} />
           <p>Name: {randomHosts.username}</p>
           <p>Age: {randomHosts.age}</p>
           <p>Gender: {randomHosts.gender}</p>
@@ -57,4 +68,4 @@ const mapStateToProps = (state) => {
  
 }
 
-export default connect(mapStateToProps)(InformationHostsContainer);
+export default connect(mapStateToProps, {getHosts})(InformationHostsContainer);

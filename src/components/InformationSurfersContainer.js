@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './styles/SurferButton.css'
 import Navbar from './Navbar';
+import {getSurfers} from '../actions/actionGetSurfers'
 
 
 class InformationSurfersContainer extends Component {
   
-  // state = {
-  //   displaySurfer: false
-  // }
+  renderSurferBtn = () => {
+    
+    this.props.getSurfers()
+
+  }
 
   renderSurfer = () => {
     //const {randomSurfers} = this.props
@@ -16,8 +19,9 @@ class InformationSurfersContainer extends Component {
     // if(this.state.displaySurfer) {
       return (
         <div>
-           <Navbar />
+          <img className ="no" alt="check" src="images/no.svg" onClick={this.renderSurferBtn}></img>
           <img width="200px" height="200px" src={`./images/${randomSurfers.image}`} alt="profile"/>
+          <img className ="yes" alt="check" src="images/yes.svg" onClick={this.renderSurferBtn} />
        
 
           <p>Name: {randomSurfers.username}</p>
@@ -42,6 +46,9 @@ class InformationSurfersContainer extends Component {
 
     return (
       <div className="renderSurfer">
+      <header>
+      <Navbar />
+      </header>
         {this.renderSurfer()}
       </div>
     );
@@ -58,4 +65,4 @@ const mapStateToProps = (state) => {
 
 
 
-export default connect(mapStateToProps)(InformationSurfersContainer);
+export default connect(mapStateToProps, {getSurfers} )(InformationSurfersContainer);

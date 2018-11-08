@@ -37,7 +37,8 @@ class Match extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        users: state.users
+        hosts: state.reducerRandomHost,
+        surfers: state.reducerRandomSurfer
     }
 }
 

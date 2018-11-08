@@ -9,11 +9,6 @@ class ImageSurfer extends Component {
     return (
       <div className="flex-container">
 
-        <div><div className="button"><NoSurfer /></div></div>
-
-       
-
-        <div><div className="button"><YesSurfer /></div></div>
 
       </div>
     );

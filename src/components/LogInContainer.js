@@ -45,7 +45,7 @@ render() {
           <Link id="submitbox" to= {'/users'}><input type="submit" value="Sign In"></input></Link>
       </form>
 
-      <img alt="logo" src="images/download.jpg"></img>
+      <img className ="HomeImage" alt="logo" src="images/download.jpg"></img>
       
 
       <h1>Welcome to Couchaisseur</h1>

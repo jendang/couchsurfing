@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {getSurfers} from '../actions/actionGetSurfers'
 import {connect} from 'react-redux'
 
-class Yes extends Component {
+class YesSurfer extends Component {
   renderYesBtn = () => {
     
     this.props.getSurfers()
@@ -28,4 +28,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps,{getSurfers})(Yes);
+export default connect(mapStateToProps,{getSurfers})(YesSurfer);

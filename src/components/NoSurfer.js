@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {getSurfers} from '../actions/actionGetSurfers'
 import {connect} from 'react-redux'
 
-class No extends Component {
+class NoSurfer extends Component {
   renderNoBtn = () => {
     
     this.props.getSurfers()
@@ -25,4 +25,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps,{getSurfers})(No);
+export default connect(mapStateToProps,{getSurfers})(NoSurfer);

@@ -5,7 +5,8 @@ import InformationHostsContainer from './components/InformationHostsContainer';
 import InformationSurfersContainer from './components/InformationSurfersContainer';
 import LogInContainer from './components/LogInContainer';
 import Match from './components/pushMatch';
-import Image from './components/Image';
+import ImageSurfer from './components/ImageSurfer';
+import ImageHost from './components/ImageHost'
 import { BrowserRouter } from 'react-router-dom'
 import {Route} from 'react-router-dom'
 
@@ -36,8 +37,8 @@ class App extends Component {
 
 
 
-          <Route exact path="/surfers/" component={Image} />
-          <Route exact path="/hosts/" component={Image} />
+          <Route exact path="/surfers/" component={ImageSurfer} />
+          <Route exact path="/hosts/" component={ImageHost} />
 
           <Route exact path="/" component={LogInContainer} />
           <Route exact path="/surfers/" component={InformationSurfersContainer} />

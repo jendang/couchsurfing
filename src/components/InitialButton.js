@@ -19,6 +19,7 @@ class InitialButton extends Component {
     render() { 
         return (  
             <div>
+                <h1>Welcome </h1>
                 <p className = "UpperText"> I am looking for a: </p>
                 <Link to= {'/surfers'}><button className ="InitialButton" onClick={this.renderSurferBtn}>Surfer</button></Link>
 

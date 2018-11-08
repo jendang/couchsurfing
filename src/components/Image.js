@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Yes from './Yes'
-import No from './No'
+import Yes from './YesSurfer'
+import No from './NoSurfer'
 import './styles/image.css';
 
 

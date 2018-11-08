@@ -36,11 +36,11 @@ render() {
           
           <Link to= {'/users'}><input id="submitbox" type="submit" value="Sign In"></input></Link>
 
-          <input className="textbox" placeholder = "Password" type="text" name="password" value={this.state.password} onChange={this.handleChange} />
+          <input className="textbox1" placeholder = "Password" type="text" name="password" value={this.state.password} onChange={this.handleChange} />
         </label>
 
         <label>
-          <input className="textbox" placeholder = "Username" type="text" name="username" value={this.state.username} onChange={this.handleChange} />
+          <input className="textbox1" placeholder = "Username" type="text" name="username" value={this.state.username} onChange={this.handleChange} />
           
         </label>
       </form>

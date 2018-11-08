@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {getHosts} from '../actions/actionGetHosts'
 import {connect} from 'react-redux'
+import './styles/text.css'
+
 
 class NoHost extends Component {
   

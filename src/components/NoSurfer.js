@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {getSurfers} from '../actions/actionGetSurfers'
 import {connect} from 'react-redux'
+import './styles/text.css'
 
 class NoSurfer extends Component {
   renderNoBtn = () => {

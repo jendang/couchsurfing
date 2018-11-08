@@ -3,6 +3,7 @@ import './styles/InitialButton.css'
 import InformationHostsContainer from './InformationHostsContainer';
 import {Link} from 'react-router-dom';
 import InformationSurfersContainer from './InformationSurfersContainer';
+import Navbar from './Navbar';
 
 
 class InitialButton extends Component {
@@ -19,13 +20,15 @@ class InitialButton extends Component {
     render() { 
         return (  
             <div>
-                <h1>Welcome </h1>
-                <p className = "UpperText"> I am looking for a: </p>
-                <Link to= {'/surfers'}><button className ="InitialButton" onClick={this.renderSurferBtn}>Surfer</button></Link>
+                <Navbar />
+                <p className = "Header"> Welcome _______ </p>
+                <p className = "UpperText"> What are you looking for, today? </p>
+                <Link to= {'/surfers'}><button className ="InitialButton1" onClick={this.renderSurferBtn}>A Surfer</button></Link>
 
-                <Link to= {'/hosts'}><button className ="InitialButton" onClick={this.renderHostBtn}>Host</button></Link>
+                <Link to= {'/hosts'}><button className ="InitialButton2" onClick={this.renderHostBtn}>A Host</button></Link>
                 
             </div>
+                
         );
     }
 }

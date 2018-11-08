@@ -26,28 +26,32 @@ handleChange = (e) => {
 }
  
 render() {
+  
   return (
     <div id="body">
 
       <form onSubmit={this.handleSubmit}>
         
         <label>
-          Username:
-          <input className="textbox" type="text" name="username" value={this.state.username} onChange={this.handleChange} />
+          
+          <Link to= {'/users'}><input id="submitbox" type="submit" value="Sign In"></input></Link>
+
+          <input className="textbox1" placeholder = "Password" type="text" name="password" value={this.state.password} onChange={this.handleChange} />
         </label>
 
         <label>
-          Password:
-          <input className="textbox" type="text" name="password" value={this.state.password} onChange={this.handleChange} />
+          <input className="textbox1" placeholder = "Username" type="text" name="username" value={this.state.username} onChange={this.handleChange} />
+          
         </label>
-          <Link id="submitbox" to= {'/users'}><button type="submit">Sign In</button></Link>
       </form>
 
       <img className ="HomeImage" alt="logo" width="500px" src="images/logodef.svg"></img>
       
 
-      <h1>Welcome to Couchaisseur</h1>
+      <h1>Welcome to Couchaisseur </h1>
+      <span><h1>Amsterdam</h1></span>
     </div>
+      
     )
   }
 

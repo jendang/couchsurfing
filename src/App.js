@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-// import Yes from './components/Yes'
-// import No from './components/No'
 import Navbar from './components/Navbar'
 import InformationHostsContainer from './components/InformationHostsContainer';
 import InformationSurfersContainer from './components/InformationSurfersContainer';
 import LogInContainer from './components/LogInContainer';
 import Match from './components/pushMatch';
+import Image from './components/Image';
 import { BrowserRouter } from 'react-router-dom'
 import {Route} from 'react-router-dom'
 
@@ -32,12 +31,12 @@ class App extends Component {
 
         <main>
           
-          {/* <Navbar /> 
-          <Yes />
-          <Image />
-          <No /> */}
 
 
+
+
+
+          <Route exact path="/surfers/" component={Image} />
 
           <Route exact path="/" component={LogInContainer} />
           <Route exact path="/surfers/" component={InformationSurfersContainer} />

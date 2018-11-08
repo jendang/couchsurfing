@@ -5,13 +5,13 @@ import {Link} from 'react-router-dom';
 
 class InformationSurfersContainer extends Component {
   
-  state = {
-    displaySurfer: false
-  }
+  // state = {
+  //   displaySurfer: false
+  // }
 
   renderSurfer = () => {
     const {randomSurfers} = this.props
-    if(this.state.displaySurfer) {
+    // if(this.state.displaySurfer) {
       return (
         <div>
           <p>Name: {randomSurfers.username}</p>
@@ -22,22 +22,20 @@ class InformationSurfersContainer extends Component {
         
       )
 
-    }else
-      return null
+    // }else
+    //   return null
   }
     
 
-  btnHandle = () => {
-    this.setState({displaySurfer: !this.state.displaySurfer})
-  }
+  // btnHandle = () => {
+  //   this.setState({displaySurfer: !this.state.displaySurfer})
+  // }
 
 
   render() {
-   
+   console.log(this.props)
     return (
       <div className="renderSurfer">
-        <Link to= {'/surfers'}><button className = "SurferButton" onClick={this.btnHandle}>Surfers
-        </button></Link>
         {this.renderSurfer()}
       </div>
     );

@@ -14,7 +14,7 @@ class Navbar extends Component {
         <li><img alt="preferences" src="images/preference.svg"></img></li>
         <li><img alt="messages" src="images/envelope.svg"></img></li>
         <Link to= {'/users'}><li><img alt="home" src="images/home.svg"></img></li></Link>
-        <div className ="logo"><li><img  alt="logo" src="images/logodef.svg"></img></li></div>
+        <div className ="logo"><Link to= {'/users'}><li><img  alt="logo" src="images/logodef.svg"></img></li></div></Link>
        </ul>
        </div>
       

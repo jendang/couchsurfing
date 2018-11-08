@@ -16,20 +16,18 @@ class InformationHostsContainer extends Component {
 
   renderHost = () => {
     const {randomHosts} = this.props
-    // this.props.getHosts()
-
+    
       return (
         <div>
           <div className="flex-container">
-          <div><img className="no" alt="check" src="images/no.svg" onClick={this.renderHostBtn} /></div>
-          <div><img className="profile" height="200px" src={`./images/${randomHosts.image}`} alt="profile"/></div>
-          <div><img className="yes" alt="check" src="images/yes.svg" onClick={this.renderHostBtn} /></div>
+            <div><img className="no" alt="check" src="images/no.svg" onClick={this.renderHostBtn} /></div>
+            <div><img className="profile" height="200px" src={`./images/${randomHosts.image}`} alt="profile"/></div>
+            <div><img className="yes" alt="check" src="images/yes.svg" onClick={this.renderHostBtn} /></div>
           </div>
-          
           <div className="info">
-          <p>Name: {randomHosts.username}</p>
-          <p>Age: {randomHosts.age}</p>
-          <p>Gender: {randomHosts.gender}</p>
+            <p>Name: {randomHosts.username}</p>
+            <p>Age: {randomHosts.age}</p>
+            <p>Gender: {randomHosts.gender}</p>
           </div>
          
         </div>
@@ -46,12 +44,11 @@ class InformationHostsContainer extends Component {
    
     return (
       <div> 
-        <header>
-          <Navbar /> 
-
-        </header>
+          <header>
+              <Navbar /> 
+           </header>
           <div className="renderHost">
-          {this.renderHost()}
+            {this.renderHost()}
           </div>
       </div>
     );

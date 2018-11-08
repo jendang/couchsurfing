@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import './styles/InitialButton.css'
-import InformationHostsContainer from './InformationHostsContainer';
+//import InformationHostsContainer from './InformationHostsContainer';
 import {Link} from 'react-router-dom';
-import InformationSurfersContainer from './InformationSurfersContainer';
+//import InformationSurfersContainer from './InformationSurfersContainer';
 import Navbar from './Navbar';
-
+import {getHosts} from '../actions/actionGetHosts'
+import {connect} from 'react-redux';
+import {getSurfers} from '../actions/actionGetSurfers'
 
 class InitialButton extends Component {
     state = {  }
     renderHostBtn = () => {
-        return <InformationHostsContainer />
+        // return <InformationHostsContainer />
+        this.props.getHosts()
         
     }
 
     renderSurferBtn = () => {
-        return <InformationSurfersContainer />
+        // return <InformationSurfersContainer />
+        this.props.getSurfers()
     }
 
     render() { 
@@ -33,6 +37,17 @@ class InitialButton extends Component {
     }
 }
 
+const mapStateToProps = (state) => {
+    return {
+     
+      randomHosts: state.reducerRandomHost
+  
+    }
+   
+  }
+  
+  export default connect(mapStateToProps, {getHosts,getSurfers})(InitialButton);
+
 
  
-export default InitialButton;
+//export default InitialButton;

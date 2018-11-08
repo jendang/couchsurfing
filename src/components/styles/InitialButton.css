@@ -1,4 +1,4 @@
-.InitialButton{
+.InitialButton1{
     background-color:white; 
     color: #0E365E;
     text-align: center;
@@ -7,17 +7,20 @@
     border-radius: 12px;
     height: 200px;
     width: 200px;
-    margin: auto;
     margin-top: 80px;
+    margin-right: 80px;
     box-shadow: 0px 3px 0px grey, 0px 3px 15px rgba(0,0,0,.4);
     align-items: center;
     justify-content: center;
     font-family: Raleway;
     cursor: pointer;
+    font-weight: bold
+
+    
     
 }
 
-/* .InitialButton2{
+.InitialButton2{
     background-color:white; 
     color: #0E365E;
     text-align: center;
@@ -26,15 +29,17 @@
     border-radius: 12px;
     height: 200px;
     width: 200px;
-    margin: auto;
     margin-top: 80px;
+    margin-left: 80px;
     box-shadow: 0px 3px 0px grey, 0px 3px 15px rgba(0,0,0,.4);
     align-items: center;
     justify-content: center;
     font-family: Raleway;
     cursor: pointer;
+    font-weight: bold
     
-} */
+} 
+
 .UpperText{
     color: #0E365E;
     font-family: Raleway;
@@ -42,5 +47,13 @@
     font-style: oblique;
     font-weight: bold;
     margin: 50px;
+
+}
+
+.Header{
+    margin: 50px;
+    font-family: Raleway;
+    font-size: 60px;
+    text-shadow: 2px 2px #0E365E;
 
 }

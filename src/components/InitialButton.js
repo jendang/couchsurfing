@@ -19,10 +19,11 @@ class InitialButton extends Component {
     render() { 
         return (  
             <div>
-                <p className = "UpperText"> I am looking for a: </p>
-                <Link to= {'/surfers'}><button className ="InitialButton" onClick={this.renderSurferBtn}>Surfer</button></Link>
+                <p className = "Header"> Welcome _______ </p>
+                <p className = "UpperText"> What are you looking for, today? </p>
+                <Link to= {'/surfers'}><button className ="InitialButton1" onClick={this.renderSurferBtn}>A Surfer</button></Link>
 
-                <Link to= {'/hosts'}><button className ="InitialButton" onClick={this.renderHostBtn}>Host</button></Link>
+                <Link to= {'/hosts'}><button className ="InitialButton2" onClick={this.renderHostBtn}>A Host</button></Link>
                 
             </div>
         );

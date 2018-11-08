@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import './styles/SurferButton.css'
 
 
-
 class InformationSurfersContainer extends Component {
   
   // state = {
@@ -35,7 +34,7 @@ class InformationSurfersContainer extends Component {
 
 
   render() {
-   console.log(this.props.getSurfers)
+
     return (
       <div className="renderSurfer">
         {this.renderSurfer()}

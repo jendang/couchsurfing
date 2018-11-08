@@ -40,10 +40,10 @@ render() {
           Password:
           <input className="textbox" type="text" name="password" value={this.state.password} onChange={this.handleChange} />
         </label>
-          <Link id="submitbox" to= {'/users'}><input type="submit" value="Sign In"></input></Link>
+          <Link id="submitbox" to= {'/users'}><button type="submit">Sign In</button></Link>
       </form>
 
-      <img className ="HomeImage" alt="logo" src="images/download.jpg"></img>
+      <img className ="HomeImage" alt="logo" width="500px" src="images/logodef.svg"></img>
       
 
       <h1>Welcome to Couchaisseur</h1>

@@ -37,6 +37,7 @@ class App extends Component {
 
 
           <Route exact path="/surfers/" component={Image} />
+          <Route exact path="/hosts/" component={Image} />
 
           <Route exact path="/" component={LogInContainer} />
           <Route exact path="/surfers/" component={InformationSurfersContainer} />

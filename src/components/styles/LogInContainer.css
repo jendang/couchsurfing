@@ -1,28 +1,25 @@
 form {
     color: #0E365E;
     padding-top: 20px;
+    align-items: right;
+    padding-left: 650px
 
-}
-
-input {
-    width: 10%;
 }
 
 label {
     color: white;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 h2 {
     font-family: semibold;
 }
 
-#submitbox {
-    background-color: #170C9E;
-
+.textbox {
+    background-color: #b67aff;
 }
 
-.textbox {
+button {
     background-color: #b67aff;
 }
 
@@ -32,12 +29,24 @@ h2 {
 }
 
 .HomeImage {
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-top: 110px;
+    padding-bottom: 40px;
 }
 
 h1 {
     font-family: Raleway;
     font-size: 60px;
     text-shadow: 2px 2px #170C9E;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+  }
+  
+.flex-container > div {
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }

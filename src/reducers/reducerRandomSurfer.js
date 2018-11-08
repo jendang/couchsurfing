@@ -9,7 +9,8 @@ const surfers = [
         email: "kylepgracia@gmail.com",
         isSurfer: true,
         matchedId: [],
-        messages: []
+        messages: [],
+        image: '/images/Kyle.jpg'
         },
         {
         id: 2,

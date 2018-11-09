@@ -11,7 +11,10 @@ class MatchingSurfer extends Component {
         return (
           <div><Navbar />
           <div className="main">
-          <h1>Congratulation Arien! You found a match with this surfer!!</h1>
+          <div className="message">
+          <h2>Congratulation Arien! </h2>
+           <h2> You have been matched with this surfer.</h2>
+          </div>
   
   
   
@@ -23,7 +26,7 @@ class MatchingSurfer extends Component {
                 </div>
   
                 <p>Sabina</p>
-                <button>Contact Surfer</button>
+                <button className="contact">Contact Surfer</button>
               </div><br></br>
   
   

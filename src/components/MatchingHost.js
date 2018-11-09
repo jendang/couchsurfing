@@ -11,7 +11,11 @@ class MatchingHost extends Component {
         return (
         <div><Navbar />
         <div className="main">
-        <h1>Congratulation Kyle! You found a match with this host!!</h1>
+          <div className="message">
+            <h2>Congratulation Kyle!</h2>
+           <h2>You have been matched with this host.</h2>
+
+          </div>
 
 
 
@@ -23,7 +27,7 @@ class MatchingHost extends Component {
               </div>
 
               <p>Mimi</p>
-              <button>Contact Host</button>
+              <button className="contact">Contact Host</button>
             </div><br></br>
 
 

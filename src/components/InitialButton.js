@@ -22,15 +22,21 @@ class InitialButton extends Component {
             <div>
                 <Navbar />
                 <p className = "UpperText"> What are you today? </p>
-                
-                <Link to= {'/hosts'}><button className ="InitialButton1" onClick={this.renderHostBtn}>Surfer</button></Link>
 
-                <li><img className="surfer"alt="surferborder" src="images/Surfboard_border.svg"></img></li>
-                
+                <div className="container-flexbox">
+                    <div className="surfer">
+                        <Link to= {'/hosts'}><button className ="InitialButton1" onClick={this.renderHostBtn}>Surfer</button></Link>
 
+                        {/* <img className="surferImg"alt="surferborder" src="images/Surfboard_border.svg"></img> */}
+
+                    </div>
+                
+                <div className="host">
                     <Link to= {'/surfers'}><button className ="InitialButton2" onClick={this.renderSurferBtn}>Host</button></Link>
-                    <li><img className="sofa"alt="sofaborder" src="images/Sofa_border.svg"></img></li>
+                    {/* <img className="sofaImg"alt="sofaborder" src="images/Sofa_border.svg"></img> */}
+                </div>
 
+                </div>
 
                 
             </div>

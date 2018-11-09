@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
 import Navbar from './Navbar'
+import './styles/matching.css'
 
 
 class MatchingHost extends Component {
@@ -9,39 +9,36 @@ class MatchingHost extends Component {
     render() { 
     
         return (
-            <div>
-                <header>
-              <Navbar /> 
-           </header>
-                <h1>Congratulation Kyle! You found a match with this host!!</h1>
-                <div>
-                     <img width="100px" height="100px" alt="profile" src="images/kyle.jpg"/>
-                </div>
-                <div>
-                    <img width="100px" height="100px" alt="profile" src="images/mimi.png"/>
-                    <h1>Mimi</h1>
-                </div>
-                <button>Contact Host</button>
-                <button>Still want to look for another host?</button>
-            </div>
+        <div><Navbar />
+        <div className="main">
+        <h1>Congratulation Kyle! You found a match with this host!!</h1>
+          <div className="flex-container">
+
+
+            <div class="card">
             
+              <div class="container">
+              <img width="150px" height="150ppx" alt="profile" src="images/kyle.jpg"/><br></br><br></br>    
+              <img width="150ppx" height="150ppx" alt="profile" src="images/mimi.png"/><br></br><br></br>
+              </div>
+              <p>Mimi</p>
+              <button>Contact Host</button>
+            </div><br></br>
+
+          </div>
+
+        </div>
+        
+        </div>
+        
 
 
           );
     }
 }
 
-const mapStateToProps = (state) => {
-    return {
-     
-      randomHosts: state.reducerRandomHost,
-      randomSurfers: state.reducerRandomSurfer
 
   
-    }
-   
-  }
-  
-  export default connect(mapStateToProps)(MatchingHost);
+  export default (MatchingHost);
 
 

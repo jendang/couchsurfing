@@ -13,14 +13,13 @@ class MatchingHost extends Component {
                 <header>
               <Navbar /> 
            </header>
-                <h1>Congratulation! You found a match with this host!!</h1>
+                <h1>Congratulation Kyle! You found a match with this host!!</h1>
                 <div>
-                    <h1>Kyle</h1>
                      <img width="100px" height="100px" alt="profile" src="images/kyle.jpg"/>
                 </div>
                 <div>
-                    <h1>Mimi</h1>
                     <img width="100px" height="100px" alt="profile" src="images/mimi.png"/>
+                    <h1>Mimi</h1>
                 </div>
                 <button>Contact Host</button>
                 <button>Still want to look for another host?</button>

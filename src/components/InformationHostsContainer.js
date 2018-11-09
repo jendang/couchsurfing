@@ -45,10 +45,18 @@ class InformationHostsContainer extends Component {
               </div>
             </div>
 
-            <div><img className ="yes" alt="check" src="images/next.svg" onClick={this.renderHostBtn}></img></div>
+            <div>
+              <img className ="yes" alt="check" src="images/next.svg" onClick={this.renderHostBtn}></img>
+            </div>
+
           
           </div>
           
+            <div>
+            <Link to= {'/matching-host'}>
+              <img width="100px" height="100px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
+          </Link>
+          </div>
 
         </div>
         

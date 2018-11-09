@@ -1,4 +1,11 @@
+
 .InitialButton1{
+    /* background: url('/images/Surfboard_border.svg') ;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-origin: content-box;
+    background-position-x: 5px;  */
+    
     background-color:white; 
     color: #0E365E;
     text-align: center;
@@ -12,15 +19,20 @@
     box-shadow: 0px 3px 0px grey, 0px 3px 15px rgba(0,0,0,.4);
     align-items: center;
     justify-content: center;
-    font-family: Raleway;
     cursor: pointer;
-    font-weight: bold
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-    
-    
-}
+} 
 
 .InitialButton2{
+    /* background: url('/images/Sofa_border.svg') ; 
+    background-repeat: no-repeat;
+    background-position: 0px 0px; 
+    background-origin: content-box;
+    background-position-x: 5px; */
+
+
     background-color:white; 
     color: #0E365E;
     text-align: center;
@@ -34,28 +46,43 @@
     box-shadow: 0px 3px 0px grey, 0px 3px 15px rgba(0,0,0,.4);
     align-items: center;
     justify-content: center;
-    font-family: Raleway;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
     font-weight: bold
+
     
-} 
+    
+}
 
 .UpperText{
     color: #0E365E;
-    font-family: Raleway;
-    font-size: 30px;
-    font-style: oblique;
-    font-weight: bold;
-    margin: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-style: regular;
+    margin-top: 100px; 
+    line-height: 55px;
+    margin-left: -230px
+    
 
 }
 
-.Header{
-    color: white;   
-    margin: 50px;
-    font-family: Raleway;
-    font-size: 60px;
-    text-shadow: 2px 2px #0E365E;
-    padding-bottom: 30px;
+.sofa{
+    position: relative;
+    left: -555px;
+    top: 40px;
 
-}
+
+}  
+.surfer{
+    position: absolute;
+    left: 345px;
+    bottom: 365px;
+
+
+}  
+
+/* .surfer{
+    position: relative;
+    padding-left: 490px;
+    margin-top: 40px;
+} */

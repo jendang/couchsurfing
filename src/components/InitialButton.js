@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './styles/InitialButton.css'
-//import InformationHostsContainer from './InformationHostsContainer';
 import {Link} from 'react-router-dom';
-//import InformationSurfersContainer from './InformationSurfersContainer';
 import Navbar from './Navbar';
 import {getHosts} from '../actions/actionGetHosts'
 import {connect} from 'react-redux';
@@ -25,11 +23,16 @@ class InitialButton extends Component {
         return (  
             <div>
                 <Navbar />
-                <p className = "Header"> Welcome _______ </p>
-                <p className = "UpperText"> What are you looking for? </p>
-                <Link to= {'/surfers'}><button className ="InitialButton1" onClick={this.renderSurferBtn}>A Surfer</button></Link>
+                <p className = "UpperText"> What are you today? </p>
+                
+                <Link to= {'/hosts'}><button className ="InitialButton1" onClick={this.renderHostBtn}>Surfer</button></Link>
 
-                <Link to= {'/hosts'}><button className ="InitialButton2" onClick={this.renderHostBtn}>A Host</button></Link>
+                <li><img className="surfer"alt="surferborder" src="images/Surfboard_border.svg"></img></li>
+                
+
+                    <Link to= {'/surfers'}><button className ="InitialButton2" onClick={this.renderSurferBtn}>Host</button></Link>
+                    <li><img className="sofa"alt="sofaborder" src="images/Sofa_border.svg"></img></li>
+
                 
             </div>
                 

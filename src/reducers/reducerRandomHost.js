@@ -13,7 +13,7 @@ const initialState= [
     isSurfer: false, //host
     matchedId: [1],
     messages: ["You have been matched with this host"],
-    image: ['mimi.png']
+    image: ['sofasquare.jpg']
     },
     {
     id: 6,
@@ -25,7 +25,7 @@ const initialState= [
     email: "mimi@gmail.com",
     isSurfer: false, //host
     matchedId: [],
-    image: ['lisa.png']
+    image: ['ikea.jpg']
     },
 
     {
@@ -38,7 +38,7 @@ const initialState= [
     email: "arien@gmail.com",
     isSurfer: false, //host
     matchedId: [],
-    image: ['arien.png']
+    image: ['sleeper.jpg']
     },
     {
     id: 8,
@@ -50,7 +50,7 @@ const initialState= [
     email: "arien@gmail.com",
     isSurfer: false, //host
     matchedId: [],
-    image: ['milan.png']
+    image: ['white.jpg']
     }
 ]
 

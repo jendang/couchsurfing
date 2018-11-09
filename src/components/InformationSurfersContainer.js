@@ -44,7 +44,7 @@ class InformationSurfersContainer extends Component {
 
           <div>
             <Link to= {'/matching-surfer'}>
-              <img width="100px" height="100px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
+              <img width="70px" height="70px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
             </Link>
           </div>
           

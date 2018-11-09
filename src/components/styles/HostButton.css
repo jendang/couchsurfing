@@ -40,3 +40,12 @@ img {
     border-radius: 5px 5px 0 0;
 }
 
+.arrow {
+
+
+}
+
+.arrow:hover {
+   background-color: #E626EA;
+
+}

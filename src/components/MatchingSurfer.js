@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar'
+import './styles/matching.css'
 
 
 class MatchingSurfer extends Component {
@@ -8,25 +9,29 @@ class MatchingSurfer extends Component {
     render() { 
     
         return (
-            <div>
-                <header>
-                    <Navbar /> 
-                </header>
-                <h1>Congratulation Arien! You found a match with this surfer!!</h1>
-                <div>
-                    
-                     <img width="100px" height="100px" alt="profile" src="images/arien.png"/>
-                </div>
-                <div>
-                    <h1>Sabina</h1>
-                    <img width="100px" height="100px" alt="profile" src="images/sabina.jpg"/>
-                </div>
-                <button>Contact Host</button>
-                <button>Still want to look for another host?</button>
+            <div><Navbar />
+            <div className="main">
+            <h1>Congratulation Arien! You found a match with this host!!</h1>
+              <div className="flex-container">
+    
+    
+                <div class="card">
+                
+                  <div class="container">
+                  <img width="150px" height="150ppx" alt="profile" src="images/arien.png"/><br></br><br></br>    
+                  <img width="150ppx" height="150ppx" alt="profile" src="images/sabina.jpg"/><br></br><br></br>
+                  </div>
+                  <p>Sabina</p>
+                  <button>Contact Host</button>
+                </div><br></br>
+    
+              </div>
+    
             </div>
             
-
-
+            </div>
+            
+    
           );
     }
 }

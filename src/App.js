@@ -3,15 +3,11 @@ import './App.css';
 import InformationHostsContainer from './components/InformationHostsContainer';
 import InformationSurfersContainer from './components/InformationSurfersContainer';
 import LogInContainer from './components/LogInContainer';
-import Match from './components/pushMatch';
 import { BrowserRouter } from 'react-router-dom'
 import {Route} from 'react-router-dom'
-
 import InitialButton from './components/InitialButton'
-
-
-
-
+import MatchingHost from './components/MatchingHost';
+import MatchingSurfer from './components/MatchingSurfer';
 
 
 class App extends Component {
@@ -20,33 +16,21 @@ class App extends Component {
 
   render() {
     return (
-        <BrowserRouter>
-
-        <div className="App">
-        <header className="App-header">
-        </header>
+    <BrowserRouter>
+      <div className="App">
+          <header className="App-header">
+          </header>
 
         <main>
-          
-
-
-
-
-
-
           <Route exact path="/" component={LogInContainer} />
           <Route exact path="/users/" component={InitialButton} />  
           <Route exact path="/surfers/" component={InformationSurfersContainer} />
           <Route exact path="/hosts/" component={InformationHostsContainer} /> 
-
-          {/* <Route exact path="/users/" component={InformationHostsContainer} />   */}
-          <Route exact path="/match/" component={Match} />
-
-          
-          
+          <Route exact path="/matching-host/" component={MatchingHost} />
+          <Route exact path="/matching-surfer/" component={MatchingSurfer} />
         </main>
       </div>
-      </BrowserRouter>
+    </BrowserRouter>
     );
   }
 

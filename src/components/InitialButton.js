@@ -9,13 +9,11 @@ import {getSurfers} from '../actions/actionGetSurfers'
 class InitialButton extends Component {
     state = {  }
     renderHostBtn = () => {
-        // return <InformationHostsContainer />
         this.props.getHosts()
         
     }
 
     renderSurferBtn = () => {
-        // return <InformationSurfersContainer />
         this.props.getSurfers()
     }
 
@@ -23,6 +21,7 @@ class InitialButton extends Component {
         return (  
             <div>
                 <Navbar />
+<<<<<<< HEAD
                 <p className = "UpperText"> What are you today? </p>
                 
                 <Link to= {'/hosts'}><button className ="InitialButton1" onClick={this.renderHostBtn}>Surfer</button></Link>
@@ -33,6 +32,12 @@ class InitialButton extends Component {
                     <Link to= {'/surfers'}><button className ="InitialButton2" onClick={this.renderSurferBtn}>Host</button></Link>
                     <li><img className="sofa"alt="sofaborder" src="images/Sofa_border.svg"></img></li>
 
+=======
+                <p className = "Header"> Welcome to your dashboard! </p>
+                <p className = "UpperText"> What are you looking for? </p>
+                <Link to= {'/surfers'}><button className ="InitialButton1" onClick={this.renderSurferBtn}>A Surfer</button></Link>
+                <Link to= {'/hosts'}><button className ="InitialButton2" onClick={this.renderHostBtn}>A Host</button></Link>
+>>>>>>> c7c23cf8e6c44e9dd172f71bf2f4fe422df2d867
                 
             </div>
                 
@@ -42,15 +47,9 @@ class InitialButton extends Component {
 
 const mapStateToProps = (state) => {
     return {
-     
       randomHosts: state.reducerRandomHost
-  
     }
-   
   }
   
   export default connect(mapStateToProps, {getHosts,getSurfers})(InitialButton);
 
-
- 
-//export default InitialButton;

@@ -8,9 +8,15 @@ import {getSurfers} from '../actions/actionGetSurfers'
 class InformationSurfersContainer extends Component {
   
   renderSurferBtn = () => {
-    
     this.props.getSurfers()
+  }
 
+  interestedBtn = () => {
+    const {randomSurfers} = this.props
+    if(randomSurfers.username === 'Kyle' || randomSurfers.username === 'Sabina')
+      return alert("Congrat!!")
+    else
+      return null
   }
 
   renderSurfer = () => {
@@ -29,6 +35,11 @@ class InformationSurfersContainer extends Component {
             <p>Age: {randomSurfers.age}</p>
             <p>Gender: {randomSurfers.gender}</p>
           </div>
+
+        <div>
+          <img width="100px" height="100px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
+
+        </div>
           
         </div>
         

@@ -27,7 +27,7 @@ class InformationSurfersContainer extends Component {
       return (
         <div className="main">
           <div className="flex-container">
-            <div><img className ="no" alt="check" src="images/previous.svg" onClick={this.renderSurferBtn}></img></div>
+            <div><img className ="arrow" alt="check" src="images/arrow back.svg" onClick={this.renderSurferBtn}></img></div>
             <div class="card">
               <img width="100%" src={`./images/${randomSurfers.image}`} alt="Avatar"></img>
               <div class="container">
@@ -38,13 +38,13 @@ class InformationSurfersContainer extends Component {
                 </p>
               </div>
             </div>
-            <div><img className ="yes" alt="check" src="images/next.svg" onClick={this.renderSurferBtn}></img></div>
+            <div><img className ="arrow" alt="check" src="images/Arrow.svg" onClick={this.renderSurferBtn}></img></div>
           
           </div>
 
           <div>
             <Link to= {'/matching-surfer'}>
-              <img width="70px" height="70px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
+              <img width="70px" height="70px" className="yes" alt="check" src="images/Heart.svg" onClick={this.interestedBtn} />
             </Link>
           </div>
           

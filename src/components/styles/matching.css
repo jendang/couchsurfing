@@ -38,14 +38,14 @@ img {
     border-radius: 5px 5px 5px 5px;
 }
 
-button {
+.contact {
     padding: 15px;
     border-radius: 4px;
     color: aliceblue;
     font-size: 16px;
 }
 
-button:hover {
+.contact:hover {
     padding: 15px;
     background-color: #170C9E;
     border-radius: 4px;
@@ -60,4 +60,10 @@ p {
 
 .flex-container .kyle {
   padding-right: 0px;
+}
+
+.message {
+    color: black;
+    font-weight: italic;
+    font-size: 20px;
 }

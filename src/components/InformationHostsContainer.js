@@ -28,7 +28,7 @@ class InformationHostsContainer extends Component {
 
           <div className="flex-container">
 
-            <div><img className="arrow" alt="check" src="images/previous.svg" onClick={this.renderHostBtn}></img></div>
+            <div><img className="arrow" alt="check" src="images/arrow back.svg" onClick={this.renderHostBtn}></img></div>
 
             <div class="card">
               <img width="100%" src={`./images/${randomHosts.image}`} alt="Avatar"></img>
@@ -42,14 +42,14 @@ class InformationHostsContainer extends Component {
             </div>
 
             <div className="arrowcircle">
-              <img className="arrow" alt="check" src="images/next.svg" onClick={this.renderHostBtn}></img>
+              <img className="arrow" alt="check" src="images/Arrow.svg" onClick={this.renderHostBtn}></img>
             </div>
           
           </div>
           
           <div>
             <Link to= {'/matching-host'}>
-              <img width="70px" height="70px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
+              <img width="70px" height="70px" className="yes" alt="check" src="images/Heart.svg" onClick={this.interestedBtn} />
             </Link>
           </div>
 

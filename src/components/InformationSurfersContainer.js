@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import './styles/SurferButton.css'
 import Navbar from './Navbar';
 import {getSurfers} from '../actions/actionGetSurfers'
+import MatchingSurfer from './MatchingSurfer';
+import {Link} from 'react-router-dom';
 
 
 class InformationSurfersContainer extends Component {
@@ -14,7 +16,7 @@ class InformationSurfersContainer extends Component {
   interestedBtn = () => {
     const {randomSurfers} = this.props
     if(randomSurfers.username === 'Kyle' || randomSurfers.username === 'Sabina')
-      return alert("Congrat!!")
+      return <MatchingSurfer />
     else
       return null
   }
@@ -37,8 +39,9 @@ class InformationSurfersContainer extends Component {
           </div>
 
         <div>
+        <Link to= {'/matching-surfer'}>
           <img width="100px" height="100px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
-
+        </Link>
         </div>
           
         </div>

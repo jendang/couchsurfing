@@ -10,7 +10,7 @@ const initialState= [
   password: "supercomplexpassword",
   email: "kylepgracia@gmail.com",
   isSurfer: true,
-  matchedId: [],
+  matchedId: 5,
   messages: []
   },
   {
@@ -58,7 +58,7 @@ const initialState= [
   password: "1234567890",
   email: "mimi@gmail.com",
   isSurfer: false, //host
-  matchedId: [],
+  matchedId: 1,
   messages: []
   },
   {
@@ -77,17 +77,15 @@ const initialState= [
 
 const users = (state = initialState, action = {}) => {
     switch (action.type) {
-      // case GET_HOSTS:
+      // case 'MATCH':
+      //   const currentUser = initialState[0]
+      //   if 
       //     return [
       //       ...state,
-      //       action.payload
-      //     ]
-       
-      
-     
-      
-    default:
-      return state
+      //       action.payload]
+    
+      default:
+        return state
     }
   }
   

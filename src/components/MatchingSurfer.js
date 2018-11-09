@@ -12,9 +12,9 @@ class MatchingSurfer extends Component {
                 <header>
                     <Navbar /> 
                 </header>
-                <h1>Congratulation! You found a match with this surfer!!</h1>
+                <h1>Congratulation Arien! You found a match with this surfer!!</h1>
                 <div>
-                    <h1>Arien</h1>
+                    
                      <img width="100px" height="100px" alt="profile" src="images/arien.png"/>
                 </div>
                 <div>

@@ -22,7 +22,7 @@ class MatchingHost extends Component {
             <div class="card">
             
               <div class="flex-container">
-                <div className="kyle"><img width="150px" height="150px" alt="profile" src="images/sofa1.jpeg"/></div>
+                <div className="kyle"><img width="150px" height="150px" alt="profile" src="images/sofasquare.jpg"/></div>
                 <div className="mimi"><img width="150px" height="150px" alt="profile" src="images/mimi.png"/></div>
               </div>
 

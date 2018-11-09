@@ -4,7 +4,9 @@
     background-repeat: no-repeat;
     background-position: 0px 0px;
     background-origin: content-box;
-    background-position-x: 5px;  
+    background-position-x: 5px; 
+    background-position-y: 5px; 
+    background-size: 50px;
     
     background-color:white; 
     color: #0E365E;
@@ -26,11 +28,11 @@
 } 
 
 .InitialButton1:hover{
-    box-shadow: 0px 5px 0px blueviolet, 0px 3px 15px rgba(0,0,0,.4);
+    box-shadow: 4px 5px 5px blueviolet, 0px 3px 15px rgba(0,0,0,.4);
 }
 
 .InitialButton2:hover{
-    box-shadow: 0px 5px 0px blueviolet, 0px 3px 15px rgba(0,0,0,.4);
+    box-shadow: 4px 5px 5px blueviolet, 0px 3px 15px rgba(0,0,0,.4);
 }
 
 .InitialButton2{
@@ -39,6 +41,8 @@
     background-position: 0px 0px; 
     background-origin: content-box;
     background-position-x: 5px; 
+    background-position-y: 5px; 
+    background-size: 50px;
 
 
     background-color:white; 

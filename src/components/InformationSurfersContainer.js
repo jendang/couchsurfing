@@ -6,7 +6,6 @@ import {getSurfers} from '../actions/actionGetSurfers'
 import MatchingSurfer from './MatchingSurfer';
 import {Link} from 'react-router-dom';
 
-
 class InformationSurfersContainer extends Component {
   
   renderSurferBtn = () => {
@@ -27,11 +26,8 @@ class InformationSurfersContainer extends Component {
    
       return (
         <div className="main">
-
           <div className="flex-container">
-
             <div><img className ="no" alt="check" src="images/previous.svg" onClick={this.renderSurferBtn}></img></div>
-
             <div class="card">
               <img width="100%" src={`./images/${randomSurfers.image}`} alt="Avatar"></img>
               <div class="container">
@@ -42,21 +38,19 @@ class InformationSurfersContainer extends Component {
                 </p>
               </div>
             </div>
-
             <div><img className ="yes" alt="check" src="images/next.svg" onClick={this.renderSurferBtn}></img></div>
           
           </div>
 
-        <div>
-        <Link to= {'/matching-surfer'}>
-          <img width="100px" height="100px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
-        </Link>
-        </div>
+          <div>
+            <Link to= {'/matching-surfer'}>
+              <img width="100px" height="100px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
+            </Link>
+          </div>
           
-        </div>
+      </div>
         
       )
-
    
   }
 
@@ -82,8 +76,5 @@ const mapStateToProps = (state) => {
   }
  
 }
-
-
-
 
 export default connect(mapStateToProps, {getSurfers} )(InformationSurfersContainer);

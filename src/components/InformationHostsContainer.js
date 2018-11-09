@@ -7,12 +7,9 @@ import {Link} from 'react-router-dom';
 import MatchingHost from './MatchingHost';
 
 class InformationHostsContainer extends Component {
-  state = {}
-
-
+  
   renderHostBtn = () => {
-   
-      this.props.getHosts()
+    this.props.getHosts()
 
   }
 
@@ -26,7 +23,6 @@ class InformationHostsContainer extends Component {
 
   renderHost = () => {
     const {randomHosts} = this.props
-    
       return (
         <div className="main">
 
@@ -48,46 +44,40 @@ class InformationHostsContainer extends Component {
             <div>
               <img className ="yes" alt="check" src="images/next.svg" onClick={this.renderHostBtn}></img>
             </div>
-
           
           </div>
           
-            <div>
+          <div>
             <Link to= {'/matching-host'}>
               <img width="100px" height="100px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
-          </Link>
+            </Link>
           </div>
 
         </div>
         
       )
 
-  
-
   }
 
  
 
   render() {
-   
     return (
       <div> 
-          <header>
+        <header>
               <Navbar /> 
-           </header>
-          <div className="renderHost">
-            {this.renderHost()}
-          </div>
+        </header>
+        <div className="renderHost">
+          {this.renderHost()}
+        </div>
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => {
-  return {
-   
+  return { 
     randomHosts: state.reducerRandomHost
-
   }
  
 }

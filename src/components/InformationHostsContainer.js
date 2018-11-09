@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import './styles/HostButton.css'
 import Navbar from './Navbar'
 import {getHosts} from '../actions/actionGetHosts'
+import {Link} from 'react-router-dom';
+import MatchingHost from './MatchingHost';
 
 class InformationHostsContainer extends Component {
   state = {}
@@ -17,7 +19,7 @@ class InformationHostsContainer extends Component {
   interestedBtn = () => {
     const {randomHosts} = this.props
     if(randomHosts.username === 'MiMi' || randomHosts.username === 'Arien')
-      return alert("Congrat!!")
+      return <MatchingHost />
     else
       return null
   }
@@ -39,8 +41,9 @@ class InformationHostsContainer extends Component {
           </div>
 
           <div>
-            <img width="100px" height="100px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
-            
+          <Link to= {'/matching-host'}>
+          <img width="100px" height="100px" className="yes" alt="check" src="images/big-heart.svg" onClick={this.interestedBtn} />
+          </Link>  
           </div>
          
         </div>

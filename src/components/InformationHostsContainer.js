@@ -18,18 +18,27 @@ class InformationHostsContainer extends Component {
     const {randomHosts} = this.props
     
       return (
-        <div>
+        <div className="main">
+
           <div className="flex-container">
-            <div><img className="no" alt="check" src="images/no.svg" onClick={this.renderHostBtn} /></div>
-            <div><img className="profile" height="200px" src={`./images/${randomHosts.image}`} alt="profile"/></div>
-            <div><img className="yes" alt="check" src="images/yes.svg" onClick={this.renderHostBtn} /></div>
+
+            <div><img className ="no" alt="check" src="images/previous.svg" onClick={this.renderHostBtn}></img></div>
+
+            <div class="card">
+              <img width="100%" src={`./images/${randomHosts.image}`} alt="Avatar"></img>
+              <div class="container">
+                <p>
+                Name: {randomHosts.username}<br></br><br></br>
+                Age: {randomHosts.age}<br></br><br></br>
+                Gender: {randomHosts.gender}
+                </p>
+              </div>
+            </div>
+
+            <div><img className ="yes" alt="check" src="images/next.svg" onClick={this.renderHostBtn}></img></div>
+          
           </div>
-          <div className="info">
-            <p>Name: {randomHosts.username}</p>
-            <p>Age: {randomHosts.age}</p>
-            <p>Gender: {randomHosts.gender}</p>
-          </div>
-         
+          
         </div>
         
       )

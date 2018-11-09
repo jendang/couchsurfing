@@ -18,16 +18,25 @@ class InformationSurfersContainer extends Component {
     const {randomSurfers} = this.props
    
       return (
-        <div>
+        <div className="main">
+
           <div className="flex-container">
-            <div><img className ="no" alt="check" src="images/no.svg" onClick={this.renderSurferBtn}></img></div>
-            <div><img className="profile" width="200px" height="200px" src={`./images/${randomSurfers.image}`} alt="profile"/></div>
-            <div><img className ="yes" alt="check" src="images/yes.svg" onClick={this.renderSurferBtn} /></div>
-          </div>
-          <div className="info">
-            <p>Name: {randomSurfers.username}</p>
-            <p>Age: {randomSurfers.age}</p>
-            <p>Gender: {randomSurfers.gender}</p>
+
+            <div><img className ="no" alt="check" src="images/previous.svg" onClick={this.renderSurferBtn}></img></div>
+
+            <div class="card">
+              <img width="100%" src={`./images/${randomSurfers.image}`} alt="Avatar"></img>
+              <div class="container">
+                <p>
+                Name: {randomSurfers.username}<br></br><br></br>
+                Age: {randomSurfers.age}<br></br><br></br>
+                Gender: {randomSurfers.gender}
+                </p>
+              </div>
+            </div>
+
+            <div><img className ="yes" alt="check" src="images/next.svg" onClick={this.renderSurferBtn}></img></div>
+          
           </div>
           
         </div>

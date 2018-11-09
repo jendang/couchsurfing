@@ -3,11 +3,13 @@ import './App.css';
 import InformationHostsContainer from './components/InformationHostsContainer';
 import InformationSurfersContainer from './components/InformationSurfersContainer';
 import LogInContainer from './components/LogInContainer';
-import Match from './components/pushMatch';
+
 import { BrowserRouter } from 'react-router-dom'
 import {Route} from 'react-router-dom'
 
 import InitialButton from './components/InitialButton'
+import MatchingHost from './components/MatchingHost';
+import MatchingSurfer from './components/MatchingSurfer';
 
 
 
@@ -40,7 +42,8 @@ class App extends Component {
           <Route exact path="/hosts/" component={InformationHostsContainer} /> 
 
           {/* <Route exact path="/users/" component={InformationHostsContainer} />   */}
-          <Route exact path="/match/" component={Match} />
+          <Route exact path="/matching-host/" component={MatchingHost} />
+          <Route exact path="/matching-surfer/" component={MatchingSurfer} />
 
           
           
